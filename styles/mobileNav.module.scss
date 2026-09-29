@@ -1,0 +1,25 @@
+@import "../assets/scss/variables";
+
+.mobilenav{
+    display: none;
+    background-color: #212121;
+   
+    // opacity: 89%;
+}
+@media screen and (max-width:540px) {
+    .mobilenav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+      
+    }
+  }
+
+.navbrand{
+    width: auto;
+}
+.search_logo{
+    color: white;
+    font-size: 9.5vw;
+  
+}

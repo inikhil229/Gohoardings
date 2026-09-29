@@ -1,0 +1,284 @@
+.rupees_logo {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.off_text {
+  color: #388e3c;
+  font-size: small;
+}
+
+.cart_content {
+  margin-top: 110px;
+  margin-bottom: 65px;
+}
+
+.continue {
+  border: none;
+  width: 200px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(48, 47, 47);
+  background-color: #fff323;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+.cart_media_img {
+  height: 230px;
+}
+
+.delet_icon {
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.7s;
+  color: #c8c7c7;
+}
+
+.card_title {
+  font-size: 19px;
+}
+#fgb {
+  cursor: not-allowed;
+}
+.card_text {
+  font-size: 14px;
+}
+
+.maincard {
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px 0px;
+  border: none;
+}
+.maincard:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 6px;
+}
+
+.maincard:hover .delet_icon {
+  color: #808080;
+  transform: scale(1.1);
+}
+
+.chek_avl_btn {
+  border: none;
+  width: 100%;
+  color: rgb(48, 47, 47);
+  background-color: #fff323;
+  padding: 5px 25px;
+  h5 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+.news_headings {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #e1e1e1;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#ereday {
+  font-size: 10px;
+}
+
+.des {
+  color: #666464;
+}
+.tag_headd {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.tag_head {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.date_select_section {
+  .input_2 {
+    border-radius: 3px;
+    width: 70px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    height: 35px;
+  }
+  .input_1 {
+    border-radius: 3px;
+    width: 70px;
+    font-size: 7px;
+    padding-top: 2%;
+    height: 35px;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .calender_logos {
+    font-size: 25px;
+    color: #7d7c7c;
+  }
+
+  .calender_logo {
+    font-size: 28px;
+    color: #747474;
+  }
+}
+.total-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: none;
+  background-color: #f7f7f7;
+  h2 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+.cart_container {
+  .empty_cart {
+    height: 200px;
+    width: auto;
+  }
+  .empty_cart_text {
+    color: #798ba1;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .cart_container {
+    .empty-cart {
+      height: 190px;
+    }
+    .empty_cart_text {
+      font-size: 1.3rem;
+    }
+  }
+  .button_section {
+    margin-top: 15px;
+  }
+  .card_title {
+    font-size: 18px;
+  }
+  .card_text_price {
+    font-size: 12px;
+  }
+  .card_text {
+    font-size: 12px;
+  }
+  .cart_media_img {
+    height: 220px;
+  }
+  .quantitey {
+    margin-left: 4px;
+    height: 15px;
+    width: 15px;
+  }
+
+  .delet_icon {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news_headings {
+    font-size: 1.3rem;
+  }
+  .total_container {
+    h2 {
+      font-size: 1.3rem;
+    }
+    .tag_headd {
+      font-size: 1rem;
+    }
+    .tag_head {
+      font-size: 1rem;
+    }
+  }
+  .date_select_section {
+    input {
+      width: 70px;
+      font-size: 13px;
+      height: 30px;
+    }
+    .input_1 {
+      width: 150px;
+
+      height: 30px;
+    }
+    .calender_logos {
+      font-size: 16px;
+    }
+
+    .calender_logo {
+      font-size: 16px;
+    }
+  }
+  .cart-container {
+    .empty_cart {
+      height: 160px;
+    }
+    .empty_cart_text {
+      font-size: 1.1rem;
+    }
+  }
+
+  .quantitey {
+    font-size: medium;
+  }
+  .card_title {
+    font-size: 17px;
+  }
+  .card_text {
+    font-size: 12px;
+  }
+  .des {
+    font-size: 13px;
+  }
+  .off_text {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .maincard_hight {
+    margin-bottom: 10px;
+    max-height: 335px;
+    overflow: scroll;
+  }
+  .hide_map {
+    display: none;
+  }
+  .cart_content {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .cart_media_img {
+    height: 120px;
+  }
+  .card_title {
+    font-size: 14px;
+  }
+  .delet_icon {
+    font-size: 15px;
+    margin-top: -4px;
+  }
+  .maincard {
+    h6 {
+      font-size: 13px;
+    }
+  }
+  .rupees_logo {
+    font-size: 11px;
+  }
+  .date_select_section {
+    .input_1 {
+      width: 45px;
+    }
+  }
+  .des {
+    margin-bottom: 0%;
+  }
+}

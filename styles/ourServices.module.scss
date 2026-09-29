@@ -1,0 +1,128 @@
+@import "../assets/scss/variables";
+.service_content {
+
+  h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #373435;
+  }
+  h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #373435;
+  }
+  .service_card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      
+  }
+  .service_card_img {
+    height: 150px;
+    width: 200px;
+  }
+  .add_container {
+    margin-top: 100px !important;
+    margin-bottom: 40px !important;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+
+    box-shadow: 0px 4px 22px -10px rgb(0 0 0 / 60%);
+    h2{
+      font-size: 2.1rem;
+    }
+    h6 {
+      font-size: 1rem;
+    }
+    .celebration_logo {
+      height: 100px;
+    }
+    .search_btn {
+      font-size: 17px;
+      width: 155px !important;
+    }
+
+    .search_btn {
+      text-transform: uppercase;
+      border: 1px solid #dfdfdf;
+      font-size: 18px;
+      border-radius: 10px;
+      height: 56px;
+      width: 155px;
+      background-color: #373435;
+      color: white;
+      transition: 0.6s;
+    } 
+
+    .search_btn:hover {
+      background-color: #4a494a;
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+   
+    .service_card_img {
+      height: 120px;
+      width: 145px;
+    }
+    // .slick-prev.slick-disabled:before,
+    // .slick-next.slick-disabled:before {
+    //   opacity: 0.25;
+    // }
+    // .slick-prev:before,
+    // .slick-next:before {
+    //   font-size: 20px;
+    // }
+    .View-Detail {
+      font-size: small;
+    }
+  }
+  @media screen and (max-width: 540px) {
+ 
+    br,.icon_clr{
+      display: none;
+        }
+    .service_card_img {
+      height: 130px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      display: none;
+    }
+    .add_container {
+      margin-top: 30px !important;
+      margin-bottom: 15px !important;
+      width: 100%;
+      border-radius: 6px;
+      padding: 3px;
+
+      h2{
+        font-size: 1.1rem !important;
+        padding-top: 4px;
+      }
+      h6 {
+        font-size: .75rem;
+      }
+
+
+      .celebration_logo {
+        height: 40px;
+        width: 40px;
+      }
+
+      .search_btn {
+        font-size: 13px;
+        margin-bottom: 4px;
+        height: 35px !important;
+        width: 100% !important;
+      }
+
+      .search_btn:hover {
+        background-color: #4a494a;
+      }
+    }
+  }
+}

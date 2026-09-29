@@ -1,0 +1,29 @@
+$icon: rgb(101, 101, 101);
+$black: #2b2b2b;
+$white: #ffffff;
+$yellow: #ffc107;
+$red: #dc3545;
+$orange: #ff8c3f;
+$grey: #2b2b2b;
+$blue: #5c7fda;
+$dark-blue: #45546c;
+$them: #29524A;
+
+$card_background: linear-gradient(
+  to bottom,
+  rgb(229, 227, 227),
+  rgb(236, 235, 235),
+  transparent
+);
+
+// button
+$buttonA: linear-gradient(to top, #e6e9f1, rgb(152, 211, 224));
+
+//shadow
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+// font-sizes
+$head: 3rem;
+$subhead: 2rem;
+$normal: 1.5rem;
+//mid screen

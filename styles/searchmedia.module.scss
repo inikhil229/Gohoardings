@@ -1,0 +1,257 @@
+@import "../assets/scss/variables";
+
+.search_media_content {
+  height: auto;
+  padding-top: 2%;
+  .search_media_img {
+    height: 300px;
+    width: 340px;
+    border-radius: 3%;
+  }
+  .heading_text {
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #373435;
+    }
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #373435;
+    }
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #373435;
+    }
+  }
+
+  .search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73%;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+
+    box-shadow: 0px 4px 22px -10px rgb(0 0 0 / 47%);
+
+    .select_media_icon {
+      height: 24px;
+      margin-right: 4%;
+
+      margin-left: 2%;
+    }
+  }
+  .basic_addon {
+    background-color: #dfdfdf;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    .basic_addon_icon {
+      font-size: 22px;
+    }
+  }
+  .search_location_box {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    font-size: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #efefef;
+    color: #222222;
+    height: 50px;
+  }
+  .search_location_box:focus {
+    box-shadow: none;
+  }
+
+  #abcd {
+    width: 303px;
+    margin-top: 4px;
+    margin-left: 44px;
+    border-radius: 6px;
+    z-index: 4;
+    padding: 0px;
+  }
+  #abcd > .border_1 {
+    margin-top: 0px;
+    font-size: 1.03rem;
+    display: block;
+    padding: 6px;
+    padding-bottom: 8px;
+    clear: both;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 0;
+  }
+
+  #abcd > .border_1:hover {
+    background-color: #e9eaeb;
+  }
+  #select_media_box {
+    width: 21.5vw;
+    color: #222222;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+
+    height: 50px;
+  }
+
+  .mnc {
+    .button {
+      border-radius: 4px;
+      background-color: #fff212;
+      border: none;
+      color: #373435;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 9px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: ">";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+  .search_btn {
+    border: 1px solid #dfdfdf;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 50px;
+    width: 135px;
+    background-color: #373435;
+    color: $white;
+
+    transition: 0.6s;
+  }
+  .search_btnNot {
+    cursor: not-allowed;
+  }
+  .dropdown_menu_location {
+    z-index: 0;
+    cursor: pointer;
+  }
+  #search_location-box:focus {
+    box-shadow: none;
+  }
+  .search_btn:hover {
+    background-color: #4a494a;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .search-container {
+      width: 74%;
+    }
+
+    .search_btn {
+      font-size: 13px;
+      height: 46px;
+      width: 110px;
+    }
+    .dropdown_toggle::after {
+      font-size: 20px;
+    }
+    #search_location_box {
+      font-size: 14px;
+      height: 46px;
+    }
+    #select_media_box {
+      font-size: 14px;
+      height: 46px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .search_container {
+      width: 87%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    #abcd {
+      width: 230px;
+    }
+    .search_container {
+      width: 100%;
+
+      .select_media_con {
+        height: 16px;
+      }
+    }
+    .enquire_now {
+      font-size: 13px;
+      padding: 4px;
+      margin-left: 10px;
+      height: 34px;
+      width: 110px;
+    }
+    .search_media_img {
+      display: none;
+    }
+    .heading_text {
+      margin: 0px 10px;
+      h2 {
+        font-size: 2.4rem;
+      }
+      h1 {
+        font-size: 3.3rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+    }
+    .search_btn {
+      font-size: 13px;
+      border-radius: 8px;
+      height: 35px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      background-color: #373435;
+    }
+
+    #search_location_box {
+      font-size: 12px;
+    }
+
+    #select_media_box {
+      font-size: 12px;
+
+      border-radius: 8px;
+      width: 100%;
+      background-color: #efefef;
+      color: #222222;
+    }
+  }
+}

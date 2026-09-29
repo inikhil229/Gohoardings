@@ -1,0 +1,175 @@
+@import "../assets/scss/variables";
+
+.influencer_media_content {
+
+  height: auto;
+  padding-top: 1%;
+ background-color: #212121;
+  .heading_text {
+
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #FFFFFF;
+ 
+     
+    }
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+  }
+
+
+
+.card, img{
+  height: 200px;
+  width: 200px ;
+  border-radius: 4.5%;
+}
+
+
+
+  .mnc {
+    .button {
+      border-radius: 4px;
+      background-color: #fff212;
+      border: none;
+      color: #373435;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 9px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin-bottom: 11%;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: ">";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+  .search_btn {
+    border: 1px solid #dfdfdf;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 50px;
+    width: 135px;
+    background-color: #373435;
+    color: $white;
+
+    transition: 0.6s;
+  }
+
+
+  @media screen and (max-width: 1366px) {
+    .search-container {
+      width: 74%;
+    }
+    .influencer_media_img {
+      width: 320px;
+      height: 308px;
+    }
+
+    .search_btn {
+      font-size: 13px;
+      height: 46px;
+      width: 110px;
+    }
+    .dropdown_toggle::after {
+      font-size: 20px;
+    }
+    #search_location_box {
+      font-size: 14px;
+      height: 46px;
+    }
+    #select_media_box {
+      font-size: 14px;
+      height: 46px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .search_container {
+      width: 87%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    #abcd {
+      width: 230px;
+    }
+    .search_container {
+      width: 100%;
+
+      .select_media_con {
+        height: 16px;
+      }
+    }
+    .enquire_now {
+      font-size: 13px;
+      padding: 4px;
+      margin-left: 10px;
+      height: 34px;
+      width: 110px;
+    }
+    .influencer_media_img {
+      display: none;
+    }
+    .heading_text {
+      margin: 0px 10px;
+      h2 {
+        font-size: 2.4rem;
+      }
+      h1 {
+        font-size: 3.3rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+    }
+    .search_btn {
+      font-size: 13px;
+      border-radius: 8px;
+      height: 35px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      background-color: #373435;
+    }
+
+    #search_location_box {
+      font-size: 12px;
+    }
+
+    #select_media_box {
+      font-size: 12px;
+
+      border-radius: 8px;
+      width: 100%;
+      background-color: #efefef;
+      color: #222222;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+# *
+User-agent: *
+Disallow: /cgi-bin/
+
+# Googlebot
+User-agent: Googlebot
+Disallow: 
+
+# googlebot-image
+User-agent: googlebot-image
+Disallow: 
+
+# googlebot-mobile
+User-agent: googlebot-mobile
+Disallow: 
+
+# MSNBot
+User-agent: MSNBot
+Disallow: 
+
+# Slurp
+User-agent: Slurp
+Disallow: 
+
+# Teoma
+User-agent: Teoma
+Disallow: 
+
+# Gigabot
+User-agent: Gigabot
+Disallow: 
+
+# Robozilla
+User-agent: Robozilla
+Disallow: 
+
+# Nutch
+User-agent: Nutch
+Disallow: 
+
+# ia_archiver
+User-agent: ia_archiver
+Disallow: 
+
+# baiduspider
+User-agent: baiduspider
+Disallow: 
+
+# naverbot
+User-agent: naverbot
+Disallow: 
+
+# yeti
+User-agent: yeti
+Disallow: 
+
+# yahoo-mmcrawler
+User-agent: yahoo-mmcrawler
+Disallow: 
+
+# psbot
+User-agent: psbot
+Disallow: 
+
+# yahoo-blogs/v3.9
+User-agent: yahoo-blogs/v3.9
+Disallow: 
+
+# Host
+Host: https://www.gohoardings.com/
+
+# Sitemaps
+Sitemap: https://gohoardings.com/airport-media-sitemap.xml
+Sitemap: https://gohoardings.com/mall-media-sitemap.xml
+Sitemap: https://gohoardings.com/billboard-sitemap.xml
+Sitemap: https://gohoardings.com/transit-media-sitemap.xml
+Sitemap: https://gohoardings.com/digital-ooh-medias-sitemap.xml
+Sitemap: https://gohoardings.com/static-pages-sitemap.xml
+Sitemap: https://gohoardings.com/office-branding-sitemap.xml
+Sitemap: https://gohoardings.com/inflight-branding-sitemap.xml

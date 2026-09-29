@@ -1,0 +1,180 @@
+#booked_media {
+  overflow-y: scroll;
+  height: 75vh;
+  border-radius: 6px;
+  padding: 7px;
+  background-color: #f1f1f1;
+  input {
+
+    width: 12vw;
+    margin: 0.5vw 1vw 0.5vw 3vw;
+    font-size: small;
+    border: none;
+    border-bottom: 1px solid #393737;
+    background-color: transparent;
+  }
+  input {
+    outline: none;
+  }
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    border: none;
+    transition: all 0.1s ease-in-out;
+    background-color: transparent;
+    padding: 4px 4px 4px 1px;
+    border-bottom: 2px solid #80807a;
+    color: #80807a;
+    font-size: 1rem;
+    font-weight: 500;
+  
+    .options_icon {
+      font-size: 13px;
+      margin-right: 10px;
+      margin-left: 0px;
+      color: gray;
+    }
+    .options_icon3 {
+      font-size: 15px;
+      margin-right: 10px;
+      margin-left: 0px;
+      color: gray;
+    }
+  }
+  button:hover {
+    border-bottom: 2px solid #393737;
+    color: #393737;
+  }
+  button[aria-expanded="true"] {
+    border-bottom: 2px solid #393737;
+    color: #393737;
+  }
+}
+.campaign_box {
+  border-radius: 7px;
+  transition: all 0.1s ease-in-out;
+  background-color: #fefefe;
+  box-shadow: rgba(98, 98, 105, 0.2) 0px 7px 29px 0px;
+  min-height: 8vh;
+  cursor: pointer;
+  padding: 1vh;
+  padding-top: 2vh;
+  tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  td {
+    width: 12vw;
+    font-size: small;
+  }
+  th {
+    width: 12vw;
+
+    font-size: small;
+    font-weight: 600;
+  }
+  p {
+    font-size: 12px;
+    color: #393939;
+  }
+  .edit {
+    font-size: 26px;
+    float: right;
+    margin-top: 6px;
+    color: #393737;
+  }
+  .down {
+    font-size: 21px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #393737;
+  }
+  .point {
+    font-size: 11px;
+    color: #393737;
+  }
+  #downld {
+    font-size: 0.9rem;
+    width: 60px;
+    height: 30px;
+  }
+}
+
+.campaign_box[aria-expanded="true"] {
+  background-color: rgb(153, 151, 151);
+  color: #ffffff;
+}
+
+.campaign_box:hover {
+  background-color: rgb(153, 151, 151);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 540px) {
+  .options {
+    button {
+      padding: 2px 2px 2px 1px;
+      font-size: 0.7rem;
+      border-bottom: 1px solid #393737;
+      .options_icon {
+        font-size: 12px;
+        margin-right: 6px;
+      }
+      .options_icon3 {
+        font-size: 14px;
+        margin-right: 6px;
+      }
+    }
+    button:hover {
+      border-bottom: 1px solid #fff212;
+    }
+  }
+  #booked_media {
+    height: 75vh;
+    padding: 7px;
+
+    input {
+      font-size: x-small;
+      width: 22vw;
+      margin: 0.5vw 1vw 0.5vw 5vw;
+    }
+  }
+  .campaign_box {
+    padding-top: 1vh;
+    min-height: 4vh;
+    .edit {
+      font-size: 20px;
+      margin-top: 4px;
+    }
+    th {
+      font-size: x-small;
+    }
+    td {
+      font-size: xx-small;
+    }
+    .down {
+      font-size: 16px;
+      float: right;
+      margin-top: 7px;
+      margin-left: 7px;
+    }
+    .point {
+      font-size: 9px;
+    }
+    #downld {
+      padding: 4px;
+      padding-top: 2px;
+      font-size: 0.7rem;
+      width: 50px;
+      height: 22px;
+    }
+    h5 {
+      font-size: 0.9rem;
+    }
+  }
+}

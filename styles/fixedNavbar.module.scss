@@ -1,0 +1,211 @@
+@import "../assets/scss/variables";
+
+.navbar_main_floating {
+  background-color: #212121;
+  opacity: 89%;
+  #home {
+    cursor: pointer;
+  }
+  .sss {
+    height: 57px;
+    width: 48px;
+  }
+
+  .GiHamburgerMenu {
+    color: #ffffff;
+    height: 34px;
+    width: 34px;
+  }
+.float_btn_notalowed{
+  cursor: not-allowed !important;
+}
+  .nav_icon_6 {
+    width: 30px;
+    height: 25px;
+    top: 7px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .nav_icon_6 span {
+    background-color: #fefefe;
+    position: absolute;
+    border-radius: 2px;
+    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+    height: 3px;
+  }
+
+  .nav_icon_6 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+  }
+  .nav_icon_6 span:nth-child(2) {
+    top: 11.2px;
+    left: 0px;
+  }
+  .nav_icon_6 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .nav_icon_6[aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(44deg) scaleX(0.7);
+    top: 13px;
+    left: -8px;
+    background-color:#d8d7d7;;
+  }
+  .nav_icon_6[aria-expanded="true"] span:nth-child(2) {
+    transform: scale(0);
+    transition-duration: 50ms;
+  }
+  .nav_icon_6[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-44deg) scaleX(0.7);
+    top: 13px;
+    left: 7px;
+  }
+
+  #xyz {
+    width: 18vw;
+
+    margin-top: 41px !important;
+
+    border-radius: 6px !important;
+    z-index: 4 !important;
+    padding: 0px !important;
+    background-color: #212121;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important ;
+  }
+  #xyz > .border_1 {
+    margin-top: 0px;
+    font-size: 1.03rem;
+    display: block;
+    padding: 6px;
+    border-radius: 0px !important;
+    padding-bottom: 8px;
+    clear: both;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 0;
+  }
+  #xyz > .border_1:hover {
+    background-color: #303030;
+  }
+
+  .float_brand {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .float_brand {
+      width: 180px;
+    }
+    .sss {
+      height: 54px;
+      width: 19px;
+    }
+    .cart {
+      margin-left: 0px;
+    }
+  }
+
+  #search_button_flotnav {
+    background-color: transparent;
+    border: 2px solid #a09f9f;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .search_logo {
+    display: table-cell;
+    color: #a09f9f;
+    vertical-align: middle;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+  }
+  #search_button_flotnav:hover {
+    border: 2px solid #e4e4e4;
+  }
+  #search_button_flotnav:hover .search_logo {
+    color:  #e4e4e4!important;
+  }
+
+  #float_map_btn_id {
+    cursor: none;
+  }
+  
+
+  #search_location_box {
+    border-radius: 0px;
+    border: transparent;
+    border-bottom: 2px solid #a09f9f;
+    width: 18vw;
+    color: #ffffff;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 3px;
+    height: 38px;
+  }
+  #search_location_box:focus {
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    color: #e2e2e2;
+  }
+  #select_media_box {
+    border: transparent;
+    width: 18vw;
+    border-bottom: 2px solid #a09f9f;
+    color: #e2e2e2;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 2px;
+    height: 38px;
+    border-radius: 0px;
+  }
+  .select_media_icon {
+    font-size: 24px;
+    margin-right: 4%;
+    margin-left: 2%;
+  }
+
+  .float_map_btn {
+    border: transparent;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .float_map_btn:hover {
+    color: #d8d7d7;
+  }
+  .float_map_btn:hover .GiHamburgerMenu {
+    color: #d8d7d7;
+  }
+}
+.new_search {
+  position: fixed;
+
+  z-index: 5;
+  top: 0%;
+  width: 100vw;
+}
+#drop_togel {
+  border: transparent;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar_main_floating {
+display: none;
+  }
+
+}
