@@ -54,7 +54,6 @@ export async function GenerateBlog() {
   const category = selectedTopic.category
 
 
- try {
    const response = await ai.models.generateContent({
     model: "gemini-3.6-flash",
 
@@ -154,47 +153,7 @@ Important:
     blogCategory: category,
   };
   
- } catch (error) {
-  console.log("error occured",error)
- }
 }
-
-const {title,url,keywords,summary,content,blogCategory} = await GenerateBlog();
-console.log(blog)
-
-// const query = `
-//   INSERT INTO blogs
-//   (
-//     title,
-//     url,
-//     image,
-//     blogCategory,
-//     keywords,
-//     summary,
-//     created_by,
-//     CreatedOn,
-//     UpdatedOn,
-//     content,
-//     popularity
-//   )
-//   VALUES (?, ?, NULL, ?, ?, ?, ?, NOW(), NOW(), ?, ?)
-// `;
-
-// const data = await executeQuery(
-//   query,
-//   [
-//     blog.title,
-//     blog.url,
-//     blog.blogCategory,
-//     blog.keywords,
-//     blog.summary,
-//     "abhishek",
-//     blog.content,
-//     0,
-//   ],
-//   "CRM",
-//   next
-// );
 
 
 

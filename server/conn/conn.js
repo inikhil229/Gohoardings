@@ -4,7 +4,7 @@ const ErrorHandle = require("../utils/Errorhandler");
 // Database configurations for multiple countries
 const dbConfig = {
   IN: {
-    user: "devuser",
+    user: "root",
     // host: "80.209.238.62",
     host: "localhost",
     password: process.env.DbPass,
@@ -15,9 +15,9 @@ const dbConfig = {
     multipleStatements: true,
   },
   AE: {
-    user: "devuser",
+    user: "root",
     // host: "80.209.238.62",
-     host: "localhost",
+    host: "localhost",
     password: process.env.DbPass,
     database: "goh_dubai",
     connectionLimit: 20,
@@ -27,9 +27,9 @@ const dbConfig = {
   },
   // ZA: { user: "root", host: "127.0.0.1", password: process.env.DbPass, database: "goh_south_africa", connectionLimit: 20, waitForConnections: true, queueLimit: 100, multipleStatements: true },
   CRM: {
-    user: "devuser",
+    user: "root",
     // host: "80.209.238.62",
-     host: "localhost",
+    host: "localhost",
     password: process.env.DbPass,
     database: "gohoardi_crmapp",
     connectionLimit: 20,
