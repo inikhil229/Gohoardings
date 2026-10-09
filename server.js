@@ -32,7 +32,7 @@ async function generateAndSaveBlog() {
       await GenerateBlog();
 
     const query = `
-      INSERT INTO blogs
+      INSERT INTO gohoardings_blog
       (
         title,
         url,
@@ -52,7 +52,7 @@ async function generateAndSaveBlog() {
     await executeQuery(
       query,
       [title, url, blogCategory, keywords, summary, "gemini", content, 0],
-      "IN",
+      "CRM",
     );
 
     return;
